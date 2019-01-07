@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <AFNetworking.h>
+#import <YYModel.h>
+#import <YYCache.h>
+#import <NSString+YYAdd.h>
+//#import <YYCategories.h>
 //无网络
 #define NOT_NETWORK_ERROR [NSError errorWithDomain:@"com.shequren.SQRNetworking.ErrorDomain" code:-999 userInfo:@{NSLocalizedDescriptionKey:@"无网络"}]
 

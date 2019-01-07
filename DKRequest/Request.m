@@ -8,7 +8,8 @@
 
 #import "Request.h"
 #import "YYCache.h"
-
+#import "YYModel.h"
+//#import "YYCategories.h"
 static AFNetworkReachabilityStatus  networkStatus; //网络状态
 
 @implementation Request
@@ -102,7 +103,7 @@ static AFNetworkReachabilityStatus  networkStatus; //网络状态
     
     //缓存，用url拼接参数作为key
     YYCache *myCache = [YYCache cacheWithName:@"DKCache"];
-    NSString *parString = parameters ? [parameters modelToJSONString] : @"";
+    NSString *parString = parameters ? [parameters yy_modelToJSONString] : @"";
     NSString *cacheKey = [NSString stringWithFormat:@"%@%@", urlString, parString];
     
     if (cache) {

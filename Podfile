@@ -6,7 +6,10 @@ target 'DKRequestExample' do
   # use_frameworks!
 
   # Pods for DKRequestExample
-
+  pod 'AFNetworking'
+  pod 'YYCache'
+  pod 'YYCategories'
+  pod 'YYModel'
   target 'DKRequestExampleTests' do
     inherit! :search_paths
     # Pods for testing
