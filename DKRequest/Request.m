@@ -7,8 +7,8 @@
 //
 
 #import "Request.h"
-#import "YYCache.h"
-#import "YYModel.h"
+#import <YYCache/YYCache.h>
+#import <YYModel/YYModel.h>
 //#import "YYCategories.h"
 static AFNetworkReachabilityStatus  networkStatus; //网络状态
 
