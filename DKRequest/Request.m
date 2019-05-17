@@ -256,6 +256,7 @@ static AFNetworkReachabilityStatus  networkStatus; //网络状态
 }
 - (void)postUploadImageWithUrl:(NSString *)urlString
                          image:(UIImage *)image
+                     imageName:(NSString*)imageName
                     parameters:(id)parameters
                       progress:(NetRequestProgressBlock)progress
                        success:(NetRequestSuccessBlock)success
@@ -268,15 +269,15 @@ static AFNetworkReachabilityStatus  networkStatus; //网络状态
         return;
     }
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    __block NSString *imageFileName = imageName;
     [manager POST:urlString parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         //        NSData *imageData = UIImagePNGRepresentation(image);
         NSData *imageData = [self compressWithMaxLength:600000 image:image];
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
         formatter.dateFormat = @"yyyyMMddHHmmss";
         NSString *str = [formatter stringFromDate:[NSDate date]];
-        NSString *fileName = [NSString stringWithFormat:@"%@.jpg",[NSString stringWithFormat:@"%@.jpg", str]];
-        [formData appendPartWithFileData:imageData name:@"img" fileName:fileName mimeType:@"image/jpg"];
-        
+        NSString *fileName = [NSString stringWithFormat:@"%@.jpg",str];
+        [formData appendPartWithFileData:imageData name:imageFileName fileName:fileName mimeType:@"image/jpg"];
     } progress:^(NSProgress * _Nonnull uploadProgress) {
         
         if (progress)progress(uploadProgress.fractionCompleted);

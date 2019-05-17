@@ -17,6 +17,8 @@
 		3D17074121E34BE60096F79A /* DKRequestExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D17074021E34BE60096F79A /* DKRequestExampleTests.m */; };
 		3D17074C21E34BE60096F79A /* DKRequestExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D17074B21E34BE60096F79A /* DKRequestExampleUITests.m */; };
 		3D17075C21E34C690096F79A /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D17075A21E34C680096F79A /* Request.m */; };
+		3D216D9C22606483001724F4 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D216D9B22606483001724F4 /* Network.m */; };
+		3D216D9F226064A3001724F4 /* HomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D216D9D226064A3001724F4 /* HomePageModel.m */; };
 		B9298DD5FBADFC49021BF626 /* libPods-DKRequestExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7663F0FED934175D25DFDC4 /* libPods-DKRequestExample.a */; };
 		D04AC6962F1C06E9D8FA4D29 /* libPods-DKRequestExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CCAF90E72AFE2DD53F68D7A /* libPods-DKRequestExampleTests.a */; };
 /* End PBXBuildFile section */
@@ -58,6 +60,10 @@
 		3D17074D21E34BE60096F79A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D17075A21E34C680096F79A /* Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
 		3D17075B21E34C690096F79A /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		3D216D9A22606483001724F4 /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		3D216D9B22606483001724F4 /* Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		3D216D9D226064A3001724F4 /* HomePageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageModel.m; sourceTree = "<group>"; };
+		3D216D9E226064A3001724F4 /* HomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageModel.h; sourceTree = "<group>"; };
 		440E953F22D852BC086D740B /* Pods-DKRequestExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DKRequestExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DKRequestExampleTests/Pods-DKRequestExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7CCAF90E72AFE2DD53F68D7A /* libPods-DKRequestExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DKRequestExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8666C2875FA321A952AFD724 /* libPods-DKRequestExampleUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DKRequestExampleUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +147,10 @@
 				3D17073221E34BE60096F79A /* LaunchScreen.storyboard */,
 				3D17073521E34BE60096F79A /* Info.plist */,
 				3D17073621E34BE60096F79A /* main.m */,
+				3D216D9A22606483001724F4 /* Network.h */,
+				3D216D9B22606483001724F4 /* Network.m */,
+				3D216D9E226064A3001724F4 /* HomePageModel.h */,
+				3D216D9D226064A3001724F4 /* HomePageModel.m */,
 			);
 			path = DKRequestExample;
 			sourceTree = "<group>";
@@ -376,6 +386,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D17072C21E34BE50096F79A /* ViewController.m in Sources */,
+				3D216D9F226064A3001724F4 /* HomePageModel.m in Sources */,
+				3D216D9C22606483001724F4 /* Network.m in Sources */,
 				3D17075C21E34C690096F79A /* Request.m in Sources */,
 				3D17073721E34BE60096F79A /* main.m in Sources */,
 				3D17072921E34BE50096F79A /* AppDelegate.m in Sources */,

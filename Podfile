@@ -10,6 +10,7 @@ target 'DKRequestExample' do
   pod 'YYCache'
   pod 'YYCategories'
   pod 'YYModel'
+  pod 'coobjc'
   target 'DKRequestExampleTests' do
     inherit! :search_paths
     # Pods for testing

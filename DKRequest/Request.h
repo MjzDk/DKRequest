@@ -166,6 +166,7 @@ typedef void (^NetResponseCache)(id responseObject);
  */
 - (void)postUploadImageWithUrl:(NSString *)urlString
                          image:(UIImage *)image
+                     imageName:(NSString*)imageName
                     parameters:(id)parameters
                       progress:(NetRequestProgressBlock)progress
                        success:(NetRequestSuccessBlock)success
